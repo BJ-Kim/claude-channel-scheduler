@@ -1,0 +1,13 @@
+{
+  "_comment": "Copy this file to .mcp.json in your project root. The key name (sample-channel) must match the name in: claude --dangerously-load-development-channels server:sample-channel",
+  "mcpServers": {
+    "sample-channel": {
+      "command": "bun",
+      "args": ["run", "/path/to/channel-sample/src/main.ts"],
+      "env": {
+        "CHANNEL_PORT": "7787",
+        "TELEGRAM_CHAT_ID": "YOUR_TELEGRAM_CHAT_ID"
+      }
+    }
+  }
+}
